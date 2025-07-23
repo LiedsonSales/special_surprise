@@ -5,12 +5,11 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #000;
 }
 
 .slider {
-    margin: 0 auto;
+    margin: 60px auto;
     width: 300px;
     height: 400px;
     overflow: hidden;
@@ -55,7 +54,7 @@ body {
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .manual-btn:hover {
@@ -95,7 +94,7 @@ body {
 }
 
 .navigation-auto div:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
