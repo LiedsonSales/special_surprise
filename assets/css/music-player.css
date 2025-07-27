@@ -5,7 +5,7 @@
 }
 
 .player {
-    background-color: blueviolet;
+    background-color: #000;
     width: 300px;
     display: grid;
     grid-template-columns: 48px 1fr 48px;
@@ -47,7 +47,7 @@
 }
 
 .bar {
-    --space: 4px;
+    --space: -4px;
     background-color: #24242424;
     overflow: hidden;
     left: var(--space);
@@ -61,7 +61,7 @@
 
 #progress {
     display: block;
-    width: var(--progress, 20%);
+    width: var(--progress, 0%);
     background-color: #fff;
     transition: all 1s linear;
     height: 100%;
