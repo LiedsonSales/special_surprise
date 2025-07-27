@@ -1,0 +1,68 @@
+.player-sec {
+    color: #fff;
+    min-height: 100px;
+    padding: 20px;
+}
+
+.player {
+    background-color: blueviolet;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-gap: 16px;
+    padding: 8px 24px;
+    position: relative;
+    border-radius: 64px;
+}
+
+.control, #current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 16px;
+}
+
+#playbtn {
+    font-size: 24px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: #fff;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#current {
+    text-align: right;
+}
+
+.bar {
+    --space: 4px;
+    background-color: #24242424;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2;
+}
+
+#progress {
+    display: block;
+    width: var(--progress, 20%);
+    background-color: #fff;
+    transition: all 1s linear;
+    height: 100%;
+}
