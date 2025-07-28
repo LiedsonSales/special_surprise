@@ -31,7 +31,6 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     cursor: pointer;
-    z-index: 1000;
 }
 
 #playbtn:hover {
