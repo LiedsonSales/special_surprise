@@ -13,7 +13,7 @@ var playPause = function() {
 }
 
 playbtn.addEventListener('click', playPause);
-playbtn.addEventListener('touchstart', playPause);
+
 
 player.onplay = function() {
     playbtn.classList.remove('fa-play');
