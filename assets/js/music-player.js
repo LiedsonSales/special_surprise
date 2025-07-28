@@ -6,7 +6,9 @@ let playMusic = document.getElementById('fa-play');
 var playPause = function() {
     alert('tocou');
     if (player.paused) {
-        player.play()
+        player.play().catch(function(error) {
+            console.error("erro ao tentar reproduzir o áudio", error)
+        })
     } else {
         player.pause()
     }
