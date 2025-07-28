@@ -4,28 +4,39 @@ let playbtn = document.getElementById('playbtn');
 let playMusic = document.getElementById('fa-play');
 
 var playPause = function() {
-    alert('tocou');
     if (player.paused) {
-        player.play().catch(function(error) {
-            console.error("erro ao tentar reproduzir o áudio", error)
-        })
+        player.play().then(() => {
+            playbtn.classList.remove('fa-play');
+            playbtn.classList.add('fa-pause');
+        }).catch((err) => {
+            console.error("Erro ao tocar áudio:", err);
+        });
     } else {
-        player.pause()
+        player.pause();
+        playbtn.classList.remove('fa-pause');
+        playbtn.classList.add('fa-play');
     }
+
+    // alert('tocou');
+    // if (player.paused) {
+    //     player.play()
+    // } else {
+    //     player.pause()
+    // }
 }
 
 playbtn.addEventListener('click', playPause);
 
 
-player.onplay = function() {
-    playbtn.classList.remove('fa-play');
-    playbtn.classList.add('fa-pause');
-}
+// player.onplay = function() {
+//     playbtn.classList.remove('fa-play');
+//     playbtn.classList.add('fa-pause');
+// }
 
-player.onpause = function() {
-    playbtn.classList.add('fa-play');
-    playbtn.classList.remove('fa-pause');
-}
+// player.onpause = function() {
+//     playbtn.classList.add('fa-play');
+//     playbtn.classList.remove('fa-pause');
+// }
 
 player.ontimeupdate = function() {
     let ct = player.currentTime;
