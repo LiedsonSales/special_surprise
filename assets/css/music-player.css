@@ -1,7 +1,4 @@
 #fa-play {
-    color: transparent;
-    background-color: transparent;
-    border: 0;
     z-index: 1000;
 }
 
@@ -33,6 +30,8 @@
 #playbtn {
     font-size: 24px;
     color: transparent;
+    border: 0;
+    background-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     cursor: pointer;

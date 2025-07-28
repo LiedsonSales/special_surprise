@@ -11,7 +11,7 @@ var playPause = function() {
     }
 }
 
-playMusic.addEventListener('click', playPause);
+playbtn.addEventListener('click', playPause);
 
 player.onplay = function() {
     playbtn.classList.remove('fa-play');
