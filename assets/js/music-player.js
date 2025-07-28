@@ -4,6 +4,7 @@ let playbtn = document.getElementById('playbtn');
 let playMusic = document.getElementById('fa-play');
 
 var playPause = function() {
+    alert('tocou');
     if (player.paused) {
         player.play()
     } else {
