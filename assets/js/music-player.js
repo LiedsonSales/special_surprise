@@ -11,6 +11,7 @@ var playPause = function() {
     }
 }
 
+playbtn.addEventListener('touchstart', playPause);
 playbtn.addEventListener('click', playPause);
 
 player.onplay = function() {
