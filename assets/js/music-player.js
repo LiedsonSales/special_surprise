@@ -1,6 +1,7 @@
 var player = document.getElementById('player');
 let progress = document.getElementById('progress');
 let playbtn = document.getElementById('playbtn');
+let playMusic = document.getElementById('fa-play');
 
 var playPause = function() {
     if (player.paused) {
@@ -10,7 +11,7 @@ var playPause = function() {
     }
 }
 
-playbtn.addEventListener('click', playPause);
+playMusic.addEventListener('click', playPause);
 
 player.onplay = function() {
     playbtn.classList.remove('fa-play');
