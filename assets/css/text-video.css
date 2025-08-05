@@ -8,9 +8,9 @@
     height: 90%;
     width: 300px;
     text-align: center;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: solid #ffffff4f 0.1px;
+    /* border: solid #ffffff4f 0.1px; */
 }
 
 .back-video {
