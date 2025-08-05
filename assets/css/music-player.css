@@ -5,7 +5,7 @@
 }
 
 .player {
-    background-color: #000;
+    background-color: #27262636;
     width: 300px;
     display: grid;
     grid-template-columns: 48px 1fr 48px;
