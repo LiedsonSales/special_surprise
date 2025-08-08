@@ -1,0 +1,13 @@
+@media (min-width: 481px) {
+    .player {
+        width: 400px;
+    }
+
+    .slider {
+        width: 400px;
+    }
+
+    .slide img {
+        width: 400px;
+    }
+}
